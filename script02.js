@@ -18,7 +18,7 @@ console.log("affter", persons);
 
 var tupleCPT = 7;
 
-function ShowListPersons(){
+function ShowListPersons(persons){
     getData();
     var personSection = document.getElementById("person");
     personSection.innerHTML = `<h1>Result</h1>`;
@@ -102,7 +102,7 @@ setInterval(checkHandler, 500);
 var inputField = document.getElementById("searchInput");
 var personSection = document.getElementById("person");
 
-ShowListPersons();
+ShowListPersons(persons);
 
 
 // changing result section HTML
