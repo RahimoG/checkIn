@@ -115,3 +115,6 @@ inputField.addEventListener("input", function() {
 
 
 
+function help() {
+    alert("Welcome!\nYou can search for persons by NAME and check.");
+}

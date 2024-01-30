@@ -82,19 +82,107 @@ span{
     font-size: 18px;
 }
 
-/*
+
+
+
+/* footer  */
+
+.width27{
+    width: 21px;
+}
+
+#contact{
+    background: var(--main-color);
+    
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.marginRight50px{
+    margin-right: 50px;
+}
+.footer{
+    padding: 20px 0;
+    bottom: 0;
+}
+
+.list{
+    width: 25%;
+}
+.list h4{
+    font-size: 21px;
+    color: var(--bg-color);
+    margin-bottom: 30px;
+    position: relative;
+}
+.list h4::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 60px;
+    left: 0;
+    bottom: -10px;
+    background: var(--bg-color);
+}
+
+.list ul li:not(:last-child){
+    margin-bottom: 16px;
+
+}
+.list ul{
+    list-style: none;
+}
+.list ul li a{
+    color: #ffffffbf;
+    font-size: var(--p-font );
+    display: block;
+    transition: .3s;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+}
+.list ul li a:hover{
+    color: var(--bg-color);
+    transform: translateX(14px);
+}
+.list .social a{
+    height: 40px;
+    width: 40px;
+    background: var(--bg-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    transition: .3s;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.list .social a:hover{
+    transform: scale(1.1);
+}
+.end-text{
+    text-align: center;
+    padding-top: 40;
+}
+.end-text p{
+    color: var(--bg-color);
+    font-size: 14px;
+    margin-top: 15px;   
+}
+
+
+#resultPage{
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
-    #imgLeft{
-        display: none;
-    }
     body{
         width: 100%;
     }
     *{
         font-size: 20px;
-    }
-    input{
-        width: 50px;
     }
     .footer .main{
         display: flex;
@@ -106,4 +194,3 @@ span{
         margin-bottom: 20px;
     }
 }
-*/
