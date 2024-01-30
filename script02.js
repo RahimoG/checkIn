@@ -1,4 +1,3 @@
-getData();
 var persons = [
     { name: "Birouk Mohamed Abderramhane", Class: "A", isChecked: false },
     { name: "BOBO2 Mohamed Abderramhane", Class: "B", isChecked: false },
@@ -8,6 +7,9 @@ var persons = [
     { name: "Bisdsarouk Mohamed Abderramhane", Class: "A", isChecked: false },
     { name: "dsarouk Mohamed Abderramhane", Class: "A", isChecked: false }
 ];
+console.log(persons);
+getData();
+console.log(persons);
 var tupleCPT = 7;
 
 function ShowListPersons(){
