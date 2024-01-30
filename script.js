@@ -1,4 +1,5 @@
-if(typeof(personFullName = JSON.parse(localStorage.getItem("personFullName"))) == null)
+console.log(localStorage.getItem(personFullName));
+if(localStorage.getItem(personFullName))
 {
     localStorage.setItem("personFullName", JSON.stringify([]));
     localStorage.setItem("personClass", JSON.stringify([]));
@@ -10,6 +11,19 @@ var personFullName = [];
 var personClass = [];
 var personIsChecked = [];
 getData();
+/*
+var persons = [
+    { name: "Birouk Mohamed Abderramhane", class: "A", isChecked: false },
+    { name: "BOBO2 Mohamed Abderramhane", class: "B", isChecked: false },
+    { name: "zzw Mohamed Abderramhane", class: "B", isChecked: false },
+    { name: "Biroudasdk Mohamed Abderramhane", class: "A", isChecked: false },
+    { name: "Birdsadaouk Mohamed Abderramhane", class: "D", isChecked: false },
+    { name: "Bisdsarouk Mohamed Abderramhane", class: "A", isChecked: false },
+    { name: "dsarouk Mohamed Abderramhane", class: "A", isChecked: false }
+];*/
+
+
+
 
 function addPerson(fullName, Class){
     personFullName.push(fullName);
