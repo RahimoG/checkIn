@@ -52,7 +52,7 @@ header .logo img{
     margin-right: 27px;
 }
 header h1{
-    font-size: 42px;
+    font-size: 32px;
     color: var(--bg-color);
 }
 /*  Content   */ 
@@ -82,7 +82,30 @@ span{
     font-size: 18px;
 }
 
+.row{
+    margin: 5px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
 
+.classA{
+    color: #2c2c2c;
+    background-color: #8ff97c;
+    padding: 1px 3px;
+    border-radius: 5px;
+}
+.classB{
+    color: #2c2c2c;
+    background-color: #f97c7c;
+    padding: 1px 3px;
+    border-radius: 5px;
+}
+.classC{
+    color: #2c2c2c;
+    background-color: #867cf9;
+    padding: 1px 3px;
+    border-radius: 5px;
+}
 
 
 /* footer  */
@@ -184,6 +207,7 @@ span{
     *{
         font-size: 20px;
     }
+    
     .footer .main{
         display: flex;
         flex-wrap: wrap;
