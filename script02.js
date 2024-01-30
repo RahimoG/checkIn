@@ -35,6 +35,7 @@ if(persons === null)
     saveData(persons);
 }
 
+
 var tupleCPT = 28;
 
 function ShowListPersons(persons){
@@ -79,15 +80,26 @@ function afficherSelected(persons){
     for(const person of persons)
     {
         if (regex.test(person['name'].toLowerCase())){
-            if(person['isChecked'] === true)
-            {
-                personSection.innerHTML += `<input type="checkbox" id="check${i}" checked>`;
-            }else{
-                personSection.innerHTML += `<input type="checkbox" id="check${i}">`;
-            }
-            personSection.innerHTML += `<span id="name${i}"> ${person['name']} </span>`;
-            personSection.innerHTML += `<span id="class${i}">|| Class ${person['Class']} </span>`;
-            personSection.innerHTML += `<br>`; 
+            const newRow = document.createElement("div");
+        newRow.setAttribute("id", "row" + i);
+        newRow.setAttribute("class", "row");
+        if(person['isChecked'] === true)
+        {
+            newRow.innerHTML += `<input type="checkbox" id="check${i}" checked>`;
+        }else{
+            newRow.innerHTML += `<input type="checkbox" id="check${i}">`;
+        }
+        newRow.innerHTML += `<span id="name${i}"> ${person['name']} </span>`;
+        if(person['Class'] == 'A')
+        {
+            newRow.innerHTML += `<span id="class${i}" class="classA"> Class ${person['Class']} </span>`;
+        }else if(person['Class'] == 'B'){
+            newRow.innerHTML += `<span id="class${i}" class="classB"> Class ${person['Class']} </span>`;
+        }else{
+            newRow.innerHTML += `<span id="class${i}" class="classC"> Class ${person['Class']} </span>`;
+        }
+        //newRow.innerHTML += `<br>`;
+        personSection.appendChild(newRow);
         }
         i++;
     }
