@@ -23,6 +23,7 @@ function ShowListPersons(){
     var personSection = document.getElementById("person");
     personSection.innerHTML = `<h1>Result</h1>`;
     let i = 0;
+    console.log(persons);
     for(const person of persons)
     {
         if(person['isChecked'] === true)
