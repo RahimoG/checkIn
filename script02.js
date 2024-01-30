@@ -3,7 +3,7 @@ persons = getData();
 if(persons === null)
 {
     persons = [
-        { name: 'BIROUK Mohamed Abderrahmane', Class: 'A', isChecked: true}
+        { name: 'BIROUK Mohamed Abderrahmane', Class: 'A', isChecked: true},
         { name: 'Adrian Brown', Class: 'A', isChecked: false },
         { name: 'Tina Johnson', Class: 'B', isChecked: false },
         { name: 'Steve Smith', Class: 'C', isChecked: false },
