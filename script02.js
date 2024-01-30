@@ -1,15 +1,21 @@
-var persons = [
-    { name: "Birouk Mohamed Abderramhane", Class: "A", isChecked: false },
-    { name: "BOBO2 Mohamed Abderramhane", Class: "B", isChecked: false },
-    { name: "zzw Mohamed Abderramhane", Class: "B", isChecked: false },
-    { name: "Biroudasdk Mohamed Abderramhane", Class: "A", isChecked: false },
-    { name: "Birdsadaouk Mohamed Abderramhane", Class: "D", isChecked: false },
-    { name: "Bisdsarouk Mohamed Abderramhane", Class: "A", isChecked: false },
-    { name: "dsarouk Mohamed Abderramhane", Class: "A", isChecked: false }
-];
-console.log(persons);
+var persons;
 getData();
-console.log(persons);
+if(persons === null)
+{
+    console.log("nulllll");
+    persons = [
+        { name: "Birouk Mohamed Abderramhane", Class: "A", isChecked: false },
+        { name: "BOBO2 Mohamed Abderramhane", Class: "B", isChecked: false },
+        { name: "zzw Mohamed Abderramhane", Class: "B", isChecked: false },
+        { name: "Biroudasdk Mohamed Abderramhane", Class: "A", isChecked: false },
+        { name: "Birdsadaouk Mohamed Abderramhane", Class: "D", isChecked: false },
+        { name: "Bisdsarouk Mohamed Abderramhane", Class: "A", isChecked: false },
+        { name: "dsarouk Mohamed Abderramhane", Class: "A", isChecked: false }
+    ];
+}
+console.log("affter", persons);
+
+
 var tupleCPT = 7;
 
 function ShowListPersons(){
