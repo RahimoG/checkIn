@@ -35,38 +35,7 @@ if(persons === null)
     saveData(persons);
 }
 
-persons = [
-        { name: 'BIROUK Mohamed Abderrahmane', Class: 'A', isChecked: true},
-        { name: 'Adrian Brown', Class: 'A', isChecked: false },
-        { name: 'Tina Johnson', Class: 'A', isChecked: false },
-        { name: 'Steve Smith', Class: 'A', isChecked: false },
-        { name: 'Emily Davis', Class: 'A', isChecked: false },
-        { name: 'Michael Wilson', Class: 'A', isChecked: false },
-        { name: 'Megan Jones', Class: 'B', isChecked: false },
-        { name: 'Ryan Thomas', Class: 'B', isChecked: false },
-        { name: 'Sophia Taylor', Class: 'B', isChecked: false },
-        { name: 'Brandon Brown', Class: 'B', isChecked: false },
-        { name: 'Alexis Moore', Class: 'B', isChecked: false },
-        { name: 'Brian Davis', Class: 'B', isChecked: false },
-        { name: 'Jessica Lewis', Class: 'C', isChecked: false },
-        { name: 'Christopher Garcia', Class: 'C', isChecked: false },
-        { name: 'Haley Hernandez', Class: 'C', isChecked: false },
-        { name: 'Erica Rodriguez', Class: 'C', isChecked: false },
-        { name: 'Jonathan Anderson', Class: 'C', isChecked: false },
-        { name: 'Jennifer Davis', Class: 'C', isChecked: false },
-        { name: 'Daniel Williams', Class: 'C', isChecked: false },
-        { name: 'Amy Miller', Class: 'C', isChecked: false },
-        { name: 'Mark Johnson', Class: 'C', isChecked: false },
-        { name: 'Sarah Taylor', Class: 'C', isChecked: false },
-        { name: 'Jordan Wilson', Class: 'C', isChecked: false },
-        { name: 'Laura Smith', Class: 'C', isChecked: false },
-        { name: 'Gregory Lewis', Class: 'C', isChecked: false },
-        { name: 'Melissa Martinez', Class: 'C', isChecked: false },
-        { name: 'Kevin Garcia', Class: 'C', isChecked: false },
-        { name: 'Taylor Davis', Class: 'C', isChecked: false }
-    ];
-    saveData(persons);
-var tupleCPT = 7;
+var tupleCPT = 28;
 
 function ShowListPersons(persons){
     persons = getData();
