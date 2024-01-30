@@ -1,3 +1,9 @@
+if(typeof(personFullName = JSON.parse(localStorage.getItem("personFullName"))) == null)
+{
+    localStorage.setItem("personFullName", JSON.stringify([]));
+    localStorage.setItem("personClass", JSON.stringify([]));
+    localStorage.setItem("personIsChecked", JSON.stringify([]));
+}
 // fullName, class, is checked 
 var tupleCPT = 0;
 var personFullName = [];
