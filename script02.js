@@ -2,7 +2,6 @@ var persons;
 persons = getData();
 if(persons === null)
 {
-    console.log("nulllll");
     persons = [
         { name: "Birouk Mohamed Abderramhane", Class: "A", isChecked: false },
         { name: "BOBO2 Mohamed Abderramhane", Class: "B", isChecked: false },
@@ -12,8 +11,8 @@ if(persons === null)
         { name: "Bisdsarouk Mohamed Abderramhane", Class: "A", isChecked: false },
         { name: "dsarouk Mohamed Abderramhane", Class: "A", isChecked: false }
     ];
+    saveData(persons);
 }
-console.log("affter", persons);
 
 
 var tupleCPT = 7;
@@ -74,8 +73,9 @@ function getData()
 }
 
 
-function checkHandler(persons){
+function checkHandler(){
     let i = 0;
+    console.log("check handler : ",persons);
     for(const person of persons)
     {
         var checkboxId = "check" + i;
