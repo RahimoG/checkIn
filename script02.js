@@ -1,5 +1,5 @@
 var persons;
-getData();
+persons = getData();
 if(persons === null)
 {
     console.log("nulllll");
@@ -19,7 +19,7 @@ console.log("affter", persons);
 var tupleCPT = 7;
 
 function ShowListPersons(persons){
-    getData();
+    persons = getData();
     var personSection = document.getElementById("person");
     personSection.innerHTML = `<h1>Result</h1>`;
     let i = 0;
@@ -40,7 +40,7 @@ function ShowListPersons(persons){
     //console.log(tupleCPT, personFullName, personClass, personIsChecked);
     return personSection.innerHTML;
 }
-function afficherSelected(){
+function afficherSelected(persons){
     var personSection = document.getElementById("person");
     personSection.innerHTML = `<h1>Result</h1>`;
     var searchValue = document.getElementById("searchInput").value.toLowerCase();
@@ -63,18 +63,18 @@ function afficherSelected(){
     }
     return personSection.innerHTML;
 }
-function saveData()
+function saveData(persons)
 {
     localStorage.setItem("persons", JSON.stringify(persons));
 }
 
 function getData()
 {
-    persons = JSON.parse(localStorage.getItem("persons"));
+    return JSON.parse(localStorage.getItem("persons"));
 }
 
 
-function checkHandler(){
+function checkHandler(persons){
     let i = 0;
     for(const person of persons)
     {
@@ -92,7 +92,7 @@ function checkHandler(){
         }
         i++;
     }
-    saveData();
+    saveData(persons);
 }
 
 setInterval(checkHandler, 500);
@@ -108,7 +108,7 @@ ShowListPersons(persons);
 // changing result section HTML
 inputField.addEventListener("input", function() {
 
-    personSection.innerHTML = afficherSelected();
+    personSection.innerHTML = afficherSelected(persons);
     
 });
 
