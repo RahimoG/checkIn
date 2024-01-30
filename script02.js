@@ -3,14 +3,35 @@ persons = getData();
 if(persons === null)
 {
     persons = [
-        { name: "Birouk Mohamed Abderramhane", Class: "A", isChecked: false },
-        { name: "BOBO2 Mohamed Abderramhane", Class: "B", isChecked: false },
-        { name: "zzw Mohamed Abderramhane", Class: "B", isChecked: false },
-        { name: "Biroudasdk Mohamed Abderramhane", Class: "A", isChecked: false },
-        { name: "Birdsadaouk Mohamed Abderramhane", Class: "D", isChecked: false },
-        { name: "Bisdsarouk Mohamed Abderramhane", Class: "A", isChecked: false },
-        { name: "dsarouk Mohamed Abderramhane", Class: "A", isChecked: false }
-    ];
+        { name: 'BIROUK Mohamed Abderrahmane', Class: 'A', isChecked: true}
+        { name: 'Adrian Brown', Class: 'A', isChecked: false },
+        { name: 'Tina Johnson', Class: 'B', isChecked: false },
+        { name: 'Steve Smith', Class: 'C', isChecked: false },
+        { name: 'Emily Davis', Class: 'A', isChecked: false },
+        { name: 'Michael Wilson', Class: 'B', isChecked: false },
+        { name: 'Megan Jones', Class: 'C', isChecked: false },
+        { name: 'Ryan Thomas', Class: 'A', isChecked: false },
+        { name: 'Sophia Taylor', Class: 'B', isChecked: false },
+        { name: 'Brandon Brown', Class: 'C', isChecked: false },
+        { name: 'Alexis Moore', Class: 'A', isChecked: false },
+        { name: 'Brian Davis', Class: 'B', isChecked: false },
+        { name: 'Jessica Lewis', Class: 'C', isChecked: false },
+        { name: 'Christopher Garcia', Class: 'A', isChecked: false },
+        { name: 'Haley Hernandez', Class: 'B', isChecked: false },
+        { name: 'Erica Rodriguez', Class: 'C', isChecked: false },
+        { name: 'Jonathan Anderson', Class: 'A', isChecked: false },
+        { name: 'Jennifer Davis', Class: 'B', isChecked: false },
+        { name: 'Daniel Williams', Class: 'C', isChecked: false },
+        { name: 'Amy Miller', Class: 'A', isChecked: false },
+        { name: 'Mark Johnson', Class: 'B', isChecked: false },
+        { name: 'Sarah Taylor', Class: 'C', isChecked: false },
+        { name: 'Jordan Wilson', Class: 'A', isChecked: false },
+        { name: 'Laura Smith', Class: 'B', isChecked: false },
+        { name: 'Gregory Lewis', Class: 'C', isChecked: false },
+        { name: 'Melissa Martinez', Class: 'A', isChecked: false },
+        { name: 'Kevin Garcia', Class: 'B', isChecked: false },
+        { name: 'Taylor Davis', Class: 'C', isChecked: false }
+      ];
     saveData(persons);
 }
 
